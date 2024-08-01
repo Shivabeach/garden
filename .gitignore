@@ -30,12 +30,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 /tests/tests/
 /tests/results/
 
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
-
 ### CodeIgniter ###
 */config/development
 */logs/log-*.php
@@ -95,10 +89,6 @@ coverage
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-
-# Dependency directories
-node_modules/
-jspm_packages/
 
 # TypeScript v1 declaration files
 typings/

@@ -1,15 +1,8 @@
 /** @format */
 import { properCase, log, listen, months, addToArray } from './utils.js';
 
-// function returnDate() {
-// 	const date = new Date();
-// 	const day = date.getDate();
-// 	const month = date.getMonth() + 1;
-// 	const year = date.getFullYear();
-// 	datey.style.color = '#4b0082';
-// 	datey.innerHTML = `Today is ${month} / ${day} / ${year}`;
-// }
-// returnDate();
+const copyr = document.querySelector('.copyr');
+const datey = document.querySelector('.datey');
 
 let yer = new Date();
 copyr.innerHTML = `\u00A92024 - ${yer.getFullYear()}`; //copywright
@@ -20,5 +13,10 @@ for (let i = 0; i < document.links.length; i++) {
 		document.links[i].className = 'current';
 	}
 }
-const date = new Date();
-const today = Intl.DateTimeFormat('en-US').format(date);
+const today = new Date();
+const f = new Intl.DateTimeFormat('en-us', {
+	dateStyle: 'full',
+	timeStyle: 'full',
+});
+// datey.style.color = '#4b0082';
+datey.innerHTML = f.format(today);

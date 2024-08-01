@@ -1,23 +1,16 @@
-/**
- * The new CSS Reset - version 1.3.1 (last updated 28.10.2021) **
- *
- * @format
- */
+/** @format */
 
-/* Preferred box-sizing value */
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
-/* Remove list styles (bullets/numbers) */
 ol,
 ul {
 	list-style: none;
 }
 
-/* For images to not be able to exceed their container */
 img {
 	max-width: 100%;
 }
@@ -42,9 +35,9 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
 }
 
 /* Set core root defaults */

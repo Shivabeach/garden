@@ -1,0 +1,8 @@
+/** @format */
+
+@use '../abstracts' as *;
+
+.head {
+	font-size: $display4-size;
+	@include center(center, center);
+}

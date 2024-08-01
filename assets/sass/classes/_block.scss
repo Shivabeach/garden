@@ -1,0 +1,28 @@
+/** @format */
+
+@use '../abstracts' as *;
+
+.left,
+.center,
+.right {
+	padding: 10px;
+}
+
+.block-head {
+	font-size: $h4-font-size;
+	font-weight: $font-weight-bold;
+	text-align: center;
+	color: map-get($greenscheme, 'accent1');
+	font-family: $font-stack-verdana;
+	text-shadow:
+		1px 2px 3px,
+		map-get($greenscheme, 'accent1v');
+}
+.date-text,
+.todo-text {
+	color: map-get($greenscheme, 'accent1');
+}
+.todo-result {
+	color: $blue;
+	padding-top: 20px;
+}

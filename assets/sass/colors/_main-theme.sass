@@ -1,14 +1,18 @@
 @use '../abstracts' as *
 /* main theme colors */
 
+body
+	background-color: #000000
+
 #container
-	background-color: map-get($greenscheme, "primary")
+	background-color: black
 	color: map-get($greenscheme, "primetext")
 
 .header,
 .footer
 	border-bottom: 1px solid goldenrod
 	background-color: map-get($greenscheme, "accent")
+	color: map-get($greenscheme, "accent1V")
 
 .left
 	background-color: $elderberry
