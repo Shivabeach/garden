@@ -603,6 +603,12 @@ body {
   height: 10rem;
 }
 
+.center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 40px;
+}
+
 /** @format */
 /* Calendar if needed */
 .calendar {

@@ -14,13 +14,18 @@
 				<div class="head"><?php echo $header;?></div>
 			</header>
 			<div class="left">Left</div>
-		<main class="center">Center main</main>
+		<main class="center">Center main
+			<div class="see">
+				<pre></pre>
+			</div>
+		</main>
 
 		<div class="right">
 			<h3 class="block-head">Todo</h3>
 				<form action="" class="todo">
-					<span class="date-text">Date: </span><input type="date" id="date" class="todo-date" required><br/>
-					<span class="todo-text">Todo: </span><textarea class="todo-action" id="todo-action" required></textarea>
+					<input type="hidden" class="uid" name="uid" value="<?php echo rand(1,500);?>">
+					<span class="date-text">Date: </span><input type="date" name="date" id="date" class="todo-date" required><br/>
+					<span class="todo-text">Todo: </span><textarea name="action" class="todo-action" id="todo-action" required></textarea>
 					<button type="submit" class="submit">Submit</button>
 					<button type="reset" class="reset">Reset</button>
 				</form>
@@ -32,6 +37,7 @@
 		</footer>
 	</div>
 	<script src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
+	<!-- <script src="<?php echo base_url('assets/js/forms1.js');?>"></script> -->
 	<script src="<?php echo base_url('assets/dist/todo-dist.js');?>"></script>
 </body>
 </html>

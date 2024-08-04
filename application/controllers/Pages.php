@@ -6,7 +6,7 @@ class Pages extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = "My Garden";
-		$data['header'] = "My Garden";
+		$data['header'] = "Idea Barn";
 		$this->load->view('pages/prime', $data);
 	}
 
