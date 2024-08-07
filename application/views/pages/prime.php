@@ -37,7 +37,7 @@
 		</footer>
 	</div>
 	<script src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
-	<!-- <script src="<?php echo base_url('assets/js/forms1.js');?>"></script> -->
-	<script src="<?php echo base_url('assets/dist/todo-dist.js');?>"></script>
+	<script src="<?php echo base_url('assets/js/forms.js');?>"></script>
+	<!-- <script src="<?php echo base_url('assets/dist/todo-dist.js');?>"></script> -->
 </body>
 </html>

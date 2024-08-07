@@ -7,15 +7,21 @@ const reset = document.querySelector('.reset');
 const uidInput = document.querySelector('.uid');
 const notes = [];
 
-//let todo = JSON.parse(localstorage.getItem("ideaBarn")) || [];
-function store(notes) {
+let formData = new FormData(todo);
+let data = Object.fromEntries(formData);
+let jsonData = JSON.stringify(data);
+
+function store() {
 	fetch('assets/js/form.json', {
 		method: 'Post',
 		headers: {
 			'Content-Type': 'application/json',
 		},
-		body: JSON.stringify(notes),
-	});
+		body: jsonData,
+	})
+		.then((res) => res.json())
+		.then((result) => console.log(result.data))
+		.catch((err) => console.log(err));
 }
 
 function saveIdea() {
@@ -43,7 +49,7 @@ function showResult(val) {
 // submit form, add to localstorage
 todo.addEventListener('submit', (e) => {
 	e.preventDefault();
-	saveIdea();
+	store();
 });
 //show aht is typed
 todo.addEventListener('keyup', () => {

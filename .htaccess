@@ -62,7 +62,7 @@ Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 <IfModule mod_deflate.c>
     # Force compression for mangled headers.
     # http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping
-    <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|html|php|txt|xml)$">
+    <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|html|php|txt|xml|json)$">
     SetOutputFilter DEFLATE
     </FilesMatch>
 </IfModule>
