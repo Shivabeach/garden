@@ -5,6 +5,7 @@ const todo = document.querySelector('.todo');
 const todoResult = document.querySelector('.todo-result');
 const reset = document.querySelector('.reset');
 const uidInput = document.querySelector('.uid');
+const local = document.querySelector('.local');
 const notes = [];
 
 let formData = new FormData(todo);
@@ -38,8 +39,6 @@ function saveIdea() {
 	let see = document.querySelector('.see pre');
 	see.textContent = '\n' + JSON.stringify(notes, '\t', 2);
 	localStorage.setItem('ideaBarn', JSON.stringify(notes));
-
-	store(notes);
 }
 
 //show what is typed in textarea
@@ -49,7 +48,7 @@ function showResult(val) {
 // submit form, add to localstorage
 todo.addEventListener('submit', (e) => {
 	e.preventDefault();
-	store();
+	saveIdea();
 });
 //show aht is typed
 todo.addEventListener('keyup', () => {
