@@ -1,0 +1,2 @@
+document.querySelector(".todo").addEventListener("submit",(function(n){n.preventDefault();var o=new FormData(this),t={};o.forEach((function(n,o){t[o]=n}));var e=JSON.stringify(t);fetch("assets/js/form.json",{method:"POST",headers:{"Content-Type":"application/json"},body:e}).then((function(n){return n.json()})).then((function(n){console.log("Success:",n)})).catch((function(n){console.error("Error:",n)}))}));
+//# sourceMappingURL=copilot-dist.js.map

@@ -16,7 +16,8 @@ document.querySelector('.todo').addEventListener('submit', function (event) {
 	const jsonString = JSON.stringify(formObject);
 
 	// Use fetch to post the JSON data to the specified URL
-	fetch('assets/js/form.json', {
+	const url = 'assets/js/form.json';
+	fetch(url, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
