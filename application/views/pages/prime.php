@@ -18,8 +18,12 @@
 			</div>
 		<main class="center">Center main
 			<div class="see">
-				<pre></pre>
+				<pre>Content</pre>
 			</div>
+			<details>
+				<summary>Can I animate</summary>
+				<p>Yes you can</p>
+			</details>
 		</main>
 
 		<div class="right">
@@ -40,6 +44,6 @@
 	</div>
 	<script src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
 	<!-- <script src="<?php echo base_url('assets/js/forms.js');?>"></script> -->
-	<script src="<?php echo base_url('assets/js/copilot.js');?>"></script>
+	<script src="<?php echo base_url('assets/js/todo.js');?>"></script>
 </body>
 </html>

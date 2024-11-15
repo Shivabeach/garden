@@ -12,6 +12,15 @@ let formData = new FormData(todo);
 let data = Object.fromEntries(formData);
 let jsonData = JSON.stringify(data);
 
+getNotes().forEach((note) => {
+	const noteEl = createNoteEl(note.uid, note.todoAction, note.todoDate);
+	appEl.insertBefore(noteEl, btnEl);
+});
+
+function getNotes() {
+	return JSON.parse(localStorage.getItem('ideaBarn') || '[]');
+}
+
 function store() {
 	fetch('assets/js/form.json', {
 		method: 'Post',
@@ -23,6 +32,7 @@ function store() {
 		.then((res) => res.json())
 		.then((result) => console.log(result.data))
 		.catch((err) => console.log(err));
+	saveIdea();
 }
 
 function saveIdea() {

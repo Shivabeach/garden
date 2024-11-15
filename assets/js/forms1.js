@@ -2,13 +2,11 @@
 
 const form = document.querySelector('.todo');
 
-// let formData = new FormData(form);
-// let data = Object.fromEntries(formData);
+let formData = new FormData(form);
+let data = Object.fromEntries(formData);
 
 const clickhandler = async () => {
 	try {
-		let formData = new FormData(form);
-		let data = Object.fromEntries(formData);
 		const res = await fetch('assets/js/form.json', {
 			method: 'POST',
 			headers: {
