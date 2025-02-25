@@ -25,6 +25,7 @@ document.querySelector('.todo').addEventListener('submit', function (event) {
 		body: jsonString,
 	})
 		.then((response) => response.json())
+
 		.then((data) => {
 			console.log('Success:', data);
 		})

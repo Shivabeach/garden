@@ -44,6 +44,6 @@
 	</div>
 	<script src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
 	<!-- <script src="<?php echo base_url('assets/js/forms.js');?>"></script> -->
-	<script src="<?php echo base_url('assets/js/todo.js');?>"></script>
+	<script src="<?php echo base_url('assets/js/copilot.js');?>"></script>
 </body>
 </html>
