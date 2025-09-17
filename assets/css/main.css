@@ -136,7 +136,7 @@ body {
 /* Elements */
 p {
   margin-top: 0.75rem;
-  font-size: 20px;
+  font-size: 25.888px;
 }
 
 blockquote {
@@ -185,25 +185,25 @@ code {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 177.4240828944px;
   margin-bottom: 0.75rem;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 109.6564171164px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 67.772816512px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 41.886784px;
   margin-bottom: 0.75rem;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 25.888px;
   margin-bottom: 0.75rem;
 }
 
@@ -447,7 +447,7 @@ textarea:focus {
 }
 
 .block-head {
-  font-size: 24px;
+  font-size: 41.886784px;
   font-weight: 700;
   text-align: center;
   color: #8b4513;
@@ -475,7 +475,7 @@ textarea:focus {
 /** @format */
 /** @format */
 .head {
-  font-size: 3.5rem;
+  font-size: 67.772816512px;
   display: flex;
   justify-content: center;
   align-items: center;

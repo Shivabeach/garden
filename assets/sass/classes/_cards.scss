@@ -3,6 +3,6 @@
 @use '../abstracts' as *;
 
 .head {
-	font-size: $display4-size;
+	font-size: $h3-font;
 	@include center(center, center);
 }

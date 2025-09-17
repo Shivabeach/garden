@@ -4,6 +4,7 @@ document.querySelector('.todo').addEventListener('submit', function (event) {
 	event.preventDefault(); // Prevent the default form submission
 
 	// Create a new FormData object from the form
+	console.log(this);
 	const formData = new FormData(this);
 
 	// Convert FormData to a plain object
@@ -16,7 +17,7 @@ document.querySelector('.todo').addEventListener('submit', function (event) {
 	const jsonString = JSON.stringify(formObject);
 
 	// Use fetch to post the JSON data to the specified URL
-	const url = 'assets/js/form.json';
+	const url = 'http://localhost/garden/assets/js/form.json';
 	fetch(url, {
 		method: 'POST',
 		headers: {

@@ -25,4 +25,4 @@ form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	writeDataFromForm();
 });
-function display() {}
+// function display() {}

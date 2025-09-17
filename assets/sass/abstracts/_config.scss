@@ -4,6 +4,8 @@
  * @format
  */
 
+$golden: 1.618;
+
 $font-stack-helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 $font-stack-lucida-grande: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva',
@@ -59,13 +61,6 @@ $font-weight-bolder: 900;
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.5;
 
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1.75;
-$h4-font-size: $font-size-base * 1.5;
-$h5-font-size: $font-size-base * 1.25;
-$h6-font-size: $font-size-base;
-
 $headings-margin-bottom: $base-spacing / 2;
 $headings-font-weight: 700;
 $headings-line-height: 1.2;
@@ -86,3 +81,12 @@ $lead-font-size: $font-size-base * 1.25;
 $lead-font-weight: 300;
 
 $small-font-size: 80%;
+
+$base-font: 16px;
+
+$h6-font: $base-font;
+$h5-font: calc($base-font * 1.618);
+$h4-font: calc($h5-font * 1.618);
+$h3-font: calc($h4-font * 1.618);
+$h2-font: calc($h3-font * 1.618);
+$h1-font: calc($h2-font * 1.618);

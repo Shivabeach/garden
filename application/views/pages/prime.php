@@ -40,10 +40,12 @@
 		<footer class="footer">
 			<div class="datey bold-8"></div>
 			<div class="copyr bold-7"></div>
+			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+
 		</footer>
 	</div>
 	<script src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
 	<!-- <script src="<?php echo base_url('assets/js/forms.js');?>"></script> -->
-	<script src="<?php echo base_url('assets/js/copilot.js');?>"></script>
+	<script src="<?php echo base_url('assets/js/writeJs.js');?>"></script>
 </body>
 </html>

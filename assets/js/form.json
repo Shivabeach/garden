@@ -1,5 +1,10 @@
 {
-	"action": "clean",
-	"date": "2/8/2025",
-	"uid": "89"
+	"Drug Usage": "diabetes and Blood Pressure",
+	"drugs": [
+		{
+			"action": "clean",
+			"date": "2/8/2025",
+			"uid": "89"
+		}
+	]
 }
