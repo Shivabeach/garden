@@ -1,5 +1,5 @@
 /** @format */
-import { properCase, log, listen, months, addToArray } from './utils.js';
+import { properCase, log, listen, addToArray } from './utils.js';
 
 const copyr = document.querySelector('.copyr');
 const datey = document.querySelector('.datey');
@@ -13,10 +13,9 @@ for (let i = 0; i < document.links.length; i++) {
 		document.links[i].className = 'current';
 	}
 }
+//Footer Date
 const today = new Date();
 const f = new Intl.DateTimeFormat('en-us', {
 	dateStyle: 'full',
-	timeStyle: 'full',
 });
-// datey.style.color = '#4b0082';
 datey.innerHTML = f.format(today);

@@ -16,36 +16,44 @@
 			<div class="left">
 				<pre class="local"></pre>
 			</div>
-		<main class="center">Center main
-			<div class="see">
-				<pre>Content</pre>
-			</div>
-			<details>
-				<summary>Can I animate</summary>
-				<p>Yes you can</p>
-			</details>
+		<main class="center">
+
+			<?php
+			$this->table->set_caption('Planting and Planning');
+      $this->table->set_heading('ID', 'Date', 'Action');
+      foreach ($plant as $row) {
+        $action = auto_typography($row->action);
+        $this->table->add_row($row->id, $row->date, $action);
+        }
+        echo $this->table->generate();?>
 		</main>
 
 		<div class="right">
 			<h3 class="block-head">Todo</h3>
-				<form action="" class="todo">
-					<input type="hidden" class="uid" name="uid" value="<?php echo rand(1,999);?>">
-					<span class="date-text">Date: </span><input type="date" name="date" id="date" class="todo-date" required><br/>
-					<span class="todo-text">Todo: </span><textarea name="action" class="todo-action" id="todo-action" required></textarea>
+				<?php
+				$data = [
+					'class' =>'todo',
+				];
+				echo form_open('forms/recieve', $data);?>
+					<label for="date">Date</label>
+					<input type="text" name="date" id="date" class="todo-date" required><br/>
+
+					<label for="todo-action">Todo:</label><textarea name="action" class="todo-action" id="todo-action" required></textarea>
 					<button type="submit" class="submit">Submit</button>
 					<button type="reset" class="reset">Reset</button>
 				</form>
 				<div class="todo-result bold-7"></div>
 		</div>
 		<footer class="footer">
-			<div class="datey bold-8"></div>
-			<div class="copyr bold-7"></div>
-			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-
+			<div class="datey bold-8 border"></div>
+			<div class="copyr bold-7 border"></div>
+			<div class="border">Page rendered in <strong>{elapsed_time}</strong> seconds.</div>
+			<div class="border"> <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></div>
+			<div>More foot</div>
 		</footer>
 	</div>
-	<script src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
-	<!-- <script src="<?php echo base_url('assets/js/forms.js');?>"></script> -->
-	<script src="<?php echo base_url('assets/js/writeJs.js');?>"></script>
+	<script type="module" src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
+
+	<script type="module" src="<?php echo base_url('assets/js/blank.js');?>"></script>
 </body>
 </html>

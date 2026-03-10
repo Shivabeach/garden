@@ -1,8 +1,16 @@
 /** @format */
-//examples
-const itemsArray = localStorage.getItem('items')
-	? JSON.parse(localStorage.getItem('items'))
-	: [];
-let todo = JSON.parse(localstorage.getItem('ideaBarn')) || [];
-//set_content_type('application/json')
-//->set_output(json_encode(array('foo' => 'bar')));
+import { todoDate } from './selectors.js';
+import { select, log } from './utils.js';
+const options = {
+	weekday: 'short',
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+};
+const today = new Date();
+const f = new Intl.DateTimeFormat('en-us', options);
+const fullDate = f.format(today);
+// this fills the various date fields with short day, full month and year in forms with date required
+if (todoDate) {
+	todoDate.value = fullDate;
+}
