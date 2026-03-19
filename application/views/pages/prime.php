@@ -19,7 +19,7 @@
 		<main class="center">
 
 			<?php
-			$this->table->set_caption('Planting and Planning');
+			$this->table->set_caption('Planting, Planning & Reacting');
       $this->table->set_heading('ID', 'Date', 'Action');
       foreach ($plant as $row) {
         $action = auto_typography($row->action);

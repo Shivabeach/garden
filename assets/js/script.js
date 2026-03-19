@@ -14,7 +14,7 @@ for (let i = 0; i < document.links.length; i++) {
 	}
 }
 //Footer Date
-const today = new Date();
+const today = Temporal.Now.plainDateISO();
 const f = new Intl.DateTimeFormat('en-us', {
 	dateStyle: 'full',
 });
