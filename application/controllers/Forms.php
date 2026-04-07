@@ -5,10 +5,23 @@ class Forms extends CI_Controller
 {
 	public function recieve() {
 		$data = [
-			"date"    => trim($this->input->post('date')),
-			"action" => trim($this->input->post('action'))
+      "date"   => trim($this->input->post('date')),
+      "action" => trim($this->input->post('action'))
 	];
 		return $this->db->insert('planted', $data);
 	}
+
+	public function soil()
+	{
+		$data = [
+      "date"   => trim($this->input->post('date')),
+      "action" => trim($this->input->post('action')),
+      "category" => trim($this->input->post('category')),
+      "slug" => trim($this->input->post("slug"))
+		];
+		return $this->db->insert('weather', $data);
+	}
+
+
 
 }

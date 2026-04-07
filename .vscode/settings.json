@@ -1,0 +1,7 @@
+{
+	"editor.fontSize": 16,
+	"editor.formatOnSave": true,
+	"editor.fontFamily": "Fira Code",
+	"workbench.colorTheme": "Default High Contrast",
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
+}

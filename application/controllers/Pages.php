@@ -5,8 +5,8 @@ class Pages extends CI_Controller {
 
 	public function index()
 	{
-		$tmpl = array('table_open' => '<table cellpadding="5" cellspacing="5" class ="display">','row_start' =>'<tr class="cent">', 'row_alt_start' => '<tr class="cent">', 'table_close' => '</table>');
-    $this->table->set_template($tmpl);
+		// $tmpl = array('table_open' => '<table cellpadding="5" cellspacing="5" class ="display">','row_start' =>'<tr class="cent">', 'row_alt_start' => '<tr class="cent">', 'table_close' => '</table>');
+    // $this->table->set_template($tmpl);
 
     if($query = $this->formsM->recieve())
     {
@@ -15,6 +15,33 @@ class Pages extends CI_Controller {
 		$data['title'] = "My Garden";
 		$data['header'] = "2026 Garden";
 		$this->load->view('pages/prime', $data);
+
+	}
+
+	public function environs()
+	{
+		$tmpl = array('table_open' => '<table cellpadding="5" cellspacing="5" class ="display">','row_start' =>'<tr class="cent">', 'row_alt_start' => '<tr class="cent">', 'table_close' => '</table>');
+    $this->table->set_template($tmpl);
+
+    if($query = $this->formsM->soil())
+    {
+      $data['cond'] = $query;
+    }
+    if($query = $this->formsM->temp())
+    {
+      $data['t'] = $query;
+    }
+
+		$data['title'] = "Garden Environment";
+		$data['header'] = "2026 Weather & Soil";
+		$this->load->view('pages/environs', $data);
+	}
+
+	public function plants()
+	{
+		$data['title'] = "Plant Knowledge";
+		$data['header'] = "Know Your Plants";
+		$this->load->view('pages/plants', $data);
 	}
 
 }

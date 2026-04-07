@@ -9,7 +9,7 @@
 }
 
 .block-head {
-	font-size: $h4-font;
+	font-size: $h5-font;
 	font-weight: $font-weight-bold;
 	text-align: center;
 	color: map-get($greenscheme, 'accent1');
@@ -29,4 +29,12 @@
 
 .border {
 	border-right: 1px solid black;
+}
+.wide100 {
+	width: 100%;
+}
+.inline {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }

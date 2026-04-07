@@ -5,20 +5,32 @@ body
 	background-color: #000000
 
 #container
-	background-color: black
+	background-color: var(--color-primary)
 	color: map-get($greenscheme, "primetext")
 
 .header,
-.footer
+.footer,
+.tab-header,
+.tab-footer
 	border-bottom: 1px solid goldenrod
-	background-color: map-get($greenscheme, "accent")
-	color: map-get($greenscheme, "accent1V")
+	background-color: var(--color-color-7)
+	color: var(--color-tertiary)
 
-.left
-	background-color: $elderberry
+.header,
+.tab-header
+	text-shadow: 2px 1px 2px black
 
 .center
-	background-color: $gen1
+	background-color: transparent
 
-.right
-	background-color: $gen4
+.left,
+.right,
+.tab-left
+	background-color: var(--color-color-6)
+	color: var(--color-primary)
+
+li
+	color: var(--color-color-7)
+
+.right:has(p)
+	color: var(--color-color-7)

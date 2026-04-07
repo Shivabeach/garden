@@ -19,3 +19,9 @@ const f = new Intl.DateTimeFormat('en-us', {
 	dateStyle: 'full',
 });
 datey.innerHTML = f.format(today);
+
+const rand = document.querySelector('.rand');
+const max = 1000;
+const min = 1;
+//const a = Math.random() * (max - min) + min
+rand.textContent = Math.round(Math.random() * (max - min) + min.toFixed(0));
