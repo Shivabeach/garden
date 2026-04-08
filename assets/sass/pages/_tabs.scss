@@ -42,13 +42,21 @@
 #Sage {
   background-color: blue;
 }
-#Nuts {
+#Balm {
   background-color: orange;
 }
 
 .name,
 .scale,
 .origin,
-.source {
+.source,
+.bloom {
   font-weight: 800;
+}
+.split {
+  display: flex;
+  gap: 2rem;
+}
+.box {
+  max-width: 30%;
 }

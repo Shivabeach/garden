@@ -1,66 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title ?></title>
-    <link rel="stylesheet" href="<?php echo base_url('assets/dist/main-dist.css');?>" media="screen" onload="this.media='all'">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-  </head>
-
-  <body>
-  	<header class="tab-header">
-        <div class="head"><?php echo $header;?></div>
-    </header>
-    <div id="tab-container">
-      <div class="tab-left"> <?php $this->load->view('menus/menu'); ?> </div>
-      <main class="tab-center2">
-        <ul class="inline">
-          <button class="tablink" onclick="openPage('Pepper', this, 'purple' )">Peppers</button>
-          <button class="tablink" onclick="openPage('Anise', this, '#6868AC' )" id="defaultOpen">Anise Hyssop</button>
-          <button class="tablink" onclick="openPage('Tulsi', this, 'green' )">Holy Basil</button>
-          <button class="tablink" onclick="openPage('Sage', this, 'blue' )">Sage</button>
-          <button class="tablink" onclick="openPage('Nuts', this, 'orange' )">Nuts</button>
-        </ul>
-        <div id="Pepper" class="tabcontent">
-          <h3>Peppers</h3>
-          <h4>Serrano Peppers</h4>
+<body>
+  <header class="tab-header">
+    <div class="head"><?php echo $header;?></div>
+  </header>
+  <div id="tab-container">
+    <div class="tab-left"> <?php $this->load->view('menus/menu'); ?> </div>
+    <main class="tab-center2">
+      <ul class="inline">
+        <button class="tablink" onclick="openPage('Pepper', this, 'purple' )">Peppers</button>
+        <button class="tablink" onclick="openPage('Anise', this, '#6868AC' )" id="defaultOpen">Anise Hyssop</button>
+        <button class="tablink" onclick="openPage('Tulsi', this, 'green' )">Holy Basil</button>
+        <button class="tablink" onclick="openPage('Sage', this, 'blue' )">Sage</button>
+        <button class="tablink" onclick="openPage('Balm', this, 'orange' )">Bee Balm</button>
+      </ul>
+      <!-- Seperating tabs from tab content -->
+      <div id="Pepper" class="tabcontent">
+        <section class="split">
+          <div class="box">
           <blockquote>
-          	<p>Species:	<span class="name">Capsicum annuum</span></p>
-						<p>Origin:	<span class="origin">Puebla and Hidalgo Mexico</p>
-						<p>Scoville scale: <span class="scale">10,000–25,000 SHU</span></p>
-						<p>Source: <span class="source"> Home Depot</p>
-					</blockquote>
-          <h4>Cayenne Peppers</h4>
-        </div>
-        <div id="Anise" class="tabcontent">
-          <h3>Anise Hyssop</h3>
+            <h4>Serrano Peppers</h4>
+            <p>Species: <span class="name">Capsicum annuum</span></p>
+            <p>Origin:  <span class="origin">Puebla and Hidalgo Mexico</p>
+            <p>Scoville scale: <span class="scale">10,000–25,000 SHU</span></p>
+            <p>Source: <span class="source"> Home Depot</p>
+          </blockquote></div>
+          <div class="box">
           <blockquote>
-          	<p>Species:	<span class="name">Agastache foeniculum</span></p>
-						<p>Origin:	<span class="origin">North America</p>
-						<p>Source: <span class="source"> Erins herb Nursery</p>
+            <h4>Cayenne Peppers</h4>
+            <p>Species: <span class="name">Capsicum annuum</span></p>
+            <p>Origin:  <span class="origin">French Guiana</p>
+            <p>Scoville scale: <span class="scale">30,000 - 50,000 SHU</span></p>
+            <p>Source: <span class="source"> Erins Herb Nursery</span></p>
           </blockquote>
-        </div>
-        <div id="Tulsi" class="tabcontent">
+          </div>
+        </section>
+      </div>
+      <div id="Anise" class="tabcontent">
+        <section class="split">
+          <div class="box">
+            <blockquote>
+              <h4>Anise Hyssop</h4>
+              <p>Species: <span class="name">Agastache foeniculum</span></p>
+              <p>Origin:  <span class="origin">North America</p>
+              <p>Source: <span class="source"> Erins herb Nursery</p>
+              <p>Anise Hyysop is renowned for being the premier plant for attracting pollinators such as butterflies and various types of Bees</p>
+            </blockquote>
+          </div>
+        </section>
+      </div>
+      <div id="Tulsi" class="tabcontent">
+        <section class="split">
+          <div class="box">
+        <blockquote>
           <h3>Holy Basil Kapoor</h3>
-          <p>Species:	<span class="name">Ocimum africanum</span></p>
-					<p>Origin:	<span class="origin"> Asia</p>
-					<p>Source: <span class="source"> Erins herb Nursery</p>
-        </div>
-        <div id="Sage" class="tabcontent">
-          <h3>Sages</h3>
-          <p>Three types of sage</p>
-        </div>
-        <div id="Nuts" class="tabcontent">
-          <h3>Nuts</h3>
-          <p>Walnuts Pecans and brazil nuts</p>
-        </div>
-      </main>
-      <?php $this->load->view("footer/tab-footer")?>
-    </div>
-    <script type="module" src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
-    <script src="<?php echo base_url('assets/js/tabs.js');?>"></script>
+          <p>Species: <span class="name">Ocimum africanum</span></p>
+          <p>Origin:  <span class="origin"> Asia</span></p>
+          <p>Source: <span class="source"> Erins herb Nursery</span></p>
+        </blockquote>
+      </div>
+    </section>
+      </div>
+      <div id="Sage" class="tabcontent">
+        <section class="split">
+          <div class="box">
+            <blockquote>
+              <h3>Pineapple Sage</h3>
+              <p>Species: <span class="name">Salvia elegans</span></p>
+              <p>Origin:  <span class="origin"> Mexico</span></p>
+              <p>Source: <span class="source"> Erins herb Nursery</span></p>
+              <p>Bloom Time: <span class="bloom">Summer, Fall</span></p>
+            </blockquote>
+          </div>
+        </section>
+      </div>
+      <div id="Balm" class="tabcontent">
+        <section class="split">
+          <div class="box">
+            <blockquote>
+              <h3>Bee Balm</h3>
+              <p>Species: <span class="name">Monarda</span></p>
+              <p>Origin:  <span class="origin"> North America</span></p>
+              <p>Source: <span class="source"> Erins herb Nursery</span></p>
+              <p>Bloom Time: <span class="bloom">Summer, Fall</span></p>
+            </blockquote>
+          </div>
+          <div class="box"><p>Bee balm is another wonderful Bee attractor. I have Bee balm and lemon balm around the yard. Lemon balm is growing wild mostly in the shade, but the Bee balm will get more sun. </p></div>
+        </section>
+      </div>
+    </main>
+    <?php $this->load->view("footer/tab-footer")?>
+  </div>
+  <script type="module" src="<?php echo base_url('assets/dist/script-dist.js');?>"></script>
+  <script src="<?php echo base_url('assets/js/tabs.js');?>"></script>

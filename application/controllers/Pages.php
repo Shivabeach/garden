@@ -14,6 +14,7 @@ class Pages extends CI_Controller {
     }
 		$data['title'] = "My Garden";
 		$data['header'] = "2026 Garden";
+		$this->load->view('header/header', $data);
 		$this->load->view('pages/prime', $data);
 
 	}
@@ -34,6 +35,7 @@ class Pages extends CI_Controller {
 
 		$data['title'] = "Garden Environment";
 		$data['header'] = "2026 Weather & Soil";
+		$this->load->view('header/header', $data);
 		$this->load->view('pages/environs', $data);
 	}
 
@@ -41,6 +43,7 @@ class Pages extends CI_Controller {
 	{
 		$data['title'] = "Plant Knowledge";
 		$data['header'] = "Know Your Plants";
+		$this->load->view('header/header', $data);
 		$this->load->view('pages/plants', $data);
 	}
 
