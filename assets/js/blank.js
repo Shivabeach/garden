@@ -12,5 +12,11 @@ const today = Temporal.Now.plainDateISO();
 // f sets up the date display format
 const f = new Intl.DateTimeFormat('en-us', options);
 const fullDate = f.format(today);
-// this fills the various date fields with short day, full month and year in forms with date required
+// this fills the various date fields with short day,
+// full month and year in forms with date required
 todoDate ? (todoDate.value = fullDate) : (todoDate.value = noDate);
+
+todo.addEventListener('submit', () => {
+	location.assign = 'http://localhost/garden/';
+	location.reload();
+});

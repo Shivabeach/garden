@@ -46,6 +46,17 @@ class Pages extends CI_Controller {
 		$this->load->view('header/header', $data);
 		$this->load->view('pages/plants', $data);
 	}
+	public function calendar() {
+
+	}
+
+	public function asides()
+	{
+		$data['title'] = "Random Plants";
+		$data['header'] = "Random Plants";
+		$this->load->view('header/header', $data);
+		$this->load->view('pages/asides', $data);
+	}
 
 }
 

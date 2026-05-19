@@ -1,4 +1,5 @@
-$green-blue: hsl(197, 55%, 55%)
+@use "sass:color"
+$green-blue: #4da8cb
 
 //very peri color scheme
 $very-peri      : #6868AC
@@ -161,8 +162,8 @@ $twilight       : #DDC6CE
 $soft-peach     : rgba(242, 230, 230, 0.5)
 $yellow         : #ffff00
 $zest           : #e67e22
-$darktwilight   : darken($twilight, 2%)
-$special-dark   : darken($aths-special, 2%)
+$darktwilight   : color.adjust($twilight, $lightness: -55%)
+$special-dark   : color.adjust($aths-special, $lightness: -45%)
 $soft-peach-dark: darken($soft-peach, 55%)
 $soft-peach-menu: darken($soft-peach, 54%)
 $peachie        : invert($soft-peach)
@@ -171,7 +172,7 @@ $soft-peach1    : rgba(242, 230, 230, 0.5)
 $color--peach-orange: #ffcc99
 
 $hover: #130393
-$visited: mix($antique-ruby, $hover, 70)
+$visited: mix($antique-ruby, $hover, $weight: 70%)
 $mixer: mix($clam-shell, $hover, 50)
 $red: #ff0000
 

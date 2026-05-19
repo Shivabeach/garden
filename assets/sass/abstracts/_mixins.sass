@@ -31,7 +31,7 @@ $desktop1: 1024px
 	border-color: $color
 	border-radius: $rad
 
-=grid($cols, $mgn)
+@mixin grid($cols, $mgn)
 	float: left
 	margin-right: $mgn
 	margin-bottom: $mgn
@@ -40,7 +40,7 @@ $desktop1: 1024px
 	&:nth-child(#{$cols}n)
 		margin-right: 0
 
-=simple-grad($color1, $color2)
+@mixin simple-grad($color1, $color2)
 	background: linear-gradient($color1, $color2)
 
 @mixin angle-grad($angle, $color, $color1)
@@ -52,7 +52,7 @@ $desktop1: 1024px
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
 
-=height1($size)
+@mixin height1($size)
 	height: $size
 
 @function set-text-color($color)
@@ -61,7 +61,7 @@ $desktop1: 1024px
 	@else
 		@return $gen22
 
-=set-background($color)
+@mixin set-background($color)
 	background-color: $color
 	color: set-text-color($color)
 

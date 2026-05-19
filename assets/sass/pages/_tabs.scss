@@ -24,26 +24,26 @@
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  //color: white;
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
 
 #Pepper {
-  background-color: purple;
+  background-color: var(--color-primary1);
 }
 #Anise {
-  background-color: #6868ac;
+  background-color: var(--color-tertiary1);
 }
 #Tulsi {
-  background-color: green;
+  background-color: var(--color-color-41);
 }
 #Sage {
-  background-color: blue;
+  background-color: var(--color-secondary1);
 }
 #Balm {
-  background-color: orange;
+  background-color: #fb9e01;
 }
 
 .name,
@@ -58,5 +58,10 @@
   gap: 2rem;
 }
 .box {
-  max-width: 30%;
+  max-width: 25%;
+  color: var(--color-primary);
+}
+
+.box:has(li, p) {
+  color: $b900;
 }

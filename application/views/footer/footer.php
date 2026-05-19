@@ -3,9 +3,12 @@
 	<div class="copyr bold-7 border"></div>
 	<div class="border">Page rendered in <strong>{elapsed_time}</strong> seconds.</div>
 	<div class="border"> <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></div>
-	<div>Site Data
-		<p>Site <a href="http://localhost/garden/pages/environs">Environment</a> Created 3/26/2026</p>
-		<p>Site <a href="http://localhost/garden/pages/plants">Plants</a> Created 4/6/2026</p>
-		<p class="rand"></p>
+	<div class="border">Site Data
+		<ul>
+		<li> <a href="http://localhost/garden">Home</a></li>
+		<li> <a href="http://localhost/garden/pages/environs">Environment</a> Created 3/26/2026</li>
+		<li> <a href="http://localhost/garden/pages/plants">Plants</a> Created 4/6/2026</li>
+		<li> <a href="http://localhost/garden/pages/asides">Asides</a> Created 5/3/2026</li>
+	</ul>
 	</div>
 </footer>

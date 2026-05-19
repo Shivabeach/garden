@@ -1,15 +1,17 @@
 /** @format */
+//updated with Claude on 4/8/2026
 function openPage(pageName, elmnt, color) {
-	var i, tabcontent, tablinks;
+	const tabcontents = document.querySelectorAll('.tabcontent');
+	const tablinks = document.querySelectorAll('.tablink');
 
-	tabcontent = document.getElementsByClassName('tabcontent');
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = 'none';
-	}
-	tablinks = document.getElementsByClassName('tablink');
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].style.backgroundColor = '';
-	}
+	tabcontents.forEach((tabcontent) => {
+		tabcontent.style.display = 'none';
+	});
+
+	tablinks.forEach((tablink) => {
+		tablink.style.backgroundColor = '';
+	});
+
 	document.getElementById(pageName).style.display = 'block';
 	elmnt.style.backgroundColor = color;
 }

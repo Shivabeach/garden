@@ -50,7 +50,7 @@
 			?>
 		</main>
 		<div class="right">
-			<h4>Soil Temps</h4>
+			<h4>Environment</h4>
 			<p>Soil temps taken with a 5 inch food thermometor ℉ </p>
 			<?php
 				foreach ($t as $row) {
