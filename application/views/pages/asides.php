@@ -16,11 +16,9 @@
 			<div class="box8 box-all">Geum canadense</div>
 			<div class="box9 box-all">Origin: North America</div>
 		</div>
-		<div id="prev10">
-			<h4>Zinnia</h4>
-		</div>
+		<div id="prev10"><h4>Zinnia</h4></div>
 		<div id="prev20"><h4>Lemon Balm</h4></div>
-		<div id="prev30">prev30</div>
+		<div id="prev30"><h4> White Avens</h4></div>
 		<div id="prev40">prev40</div>
 		<div id="div10">div10</div>
 		<div id="div20">div20</div>

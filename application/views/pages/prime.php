@@ -10,7 +10,8 @@
 				];
 		echo form_open('forms/recieve', $data);?> <label for="date">Date</label>
 		<input type="text" name="date" id="date" class="todo-date" required><br />
-		<label for="todo-action">Todo:</label><textarea name="action" class="todo-action" id="todo-action" required></textarea>
+		<label for="todo-action">Todo:</label>
+		<textarea name="action" class="todo-action" id="todo-action" required></textarea>
 		<button type="submit" class="submit">Submit</button>
 		<button type="reset" class="reset">Reset</button>
 	</form>

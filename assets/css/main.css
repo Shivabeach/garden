@@ -1,7 +1,7 @@
 /** @format */
 /** @format */
 /**
- * /* Config
+ * Config
  *
  * @format
  */
@@ -29,6 +29,48 @@
   --color-color-52: #1993e6;
   --color-color-62: #0e86d8;
   --color-color-72: #8289c9;
+  --orange-50: #fff7ed;
+  --orange-100: #ffedd4;
+  --orange-200: #ffd6a7;
+  --orange-300: #ffb86a;
+  --orange-400: #ff8904;
+  --orange-500: #ff6900;
+  --orange-600: #f54900;
+  --orange-700: #ca3500;
+  --orange-800: #9f2d00;
+  --orange-900: #7e2a0c;
+  --orange-950: #441306;
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #b9f8cf;
+  --green-300: #7bf1a8;
+  --green-400: #05df72;
+  --green-500: #00c950;
+  --green-600: #00a63e;
+  --green-700: #008236;
+  --green-800: #016630;
+  --green-900: #0d542b;
+  --green-950: #032e15;
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d4ff;
+  --purple-300: #dab2ff;
+  --purple-400: #c27aff;
+  --purple-500: #ad46ff;
+  --purple-600: #9810fa;
+  --purple-700: #8200db;
+  --purple-800: #6e11b0;
+  --purple-900: #59168b;
+  --purple-950: #3c0366;
+  --blue-step-0: #dedcff;
+  --blue-step-1: #bcbaff;
+  --blue-step-2: #969aff;
+  --blue-step-3: #697bfe;
+  --blue-step-4: #155dfc;
+  --blue-step-5: #224ac4;
+  --blue-step-6: #23388f;
+  --blue-step-7: #1f275e;
+  --blue-step-8: #161730;
 }
 
 /** @format */
@@ -132,7 +174,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   line-height: 1.5;
 }
 
@@ -173,8 +214,9 @@ blockquote {
 /** @format */
 /* Links */
 a {
-  color: hsl(336, 86%, 24%);
+  color: var(--blue-step-8);
   text-decoration: none;
+  font-size: 18px;
 }
 a:visited {
   color: hsl(346, 81%, 9%);
@@ -535,7 +577,7 @@ tr:has(th) {
   font-size: 25.888px;
   font-weight: 700;
   text-align: center;
-  color: #8b4513;
+  color: var(--blue-step-8);
   font-family: "Verdana", "Geneva", sans-serif;
   text-shadow: 1px 2px 3px;
 }
@@ -583,6 +625,10 @@ li {
   justify-content: center;
   align-items: center;
   font-family: "Cantata One";
+}
+
+.drug {
+  font-weight: 700;
 }
 
 /** @format */
@@ -640,8 +686,8 @@ body {
 }
 
 #container {
-  background-color: var(--color-primary);
-  color: #ff7fff;
+  background-color: var(--blue-step-8);
+  color: rgb(127.5, 124, 237.5);
 }
 
 .header,

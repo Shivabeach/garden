@@ -1,29 +1,14 @@
-// for flex containers only
-$mobile1: 568px
-$tablet1: 768px - 1px
-$timeline1: 1000px
-$desktop1: 1024px
 
-=center($value, $value2)
+@mixin clearfix
+	&::after
+		clear: both
+		content: ""
+		display: block
+
+@mixin center($value, $value2)
 	display: flex
 	justify-content: $value
 	align-items: $value2
-
-=desktop
-	@media screen and (min-width: $desktop1)
-		@content
-
-=tablet
-	@media screen and (min-width: $tablet1) and (max-width: $desktop1 - 1px)
-		@content
-
-=mobile
-	@media screen and (max-width: $tablet1 - 1px)
-		@content
-
-=retina
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
-		@content
 
 @mixin border($pixel, $type, $color, $rad)
 	border-width: $pixel
@@ -50,7 +35,6 @@ $desktop1: 1024px
 	min-height: 100vh
 	scroll-behavior: smooth
 	-moz-osx-font-smoothing: grayscale
-	-webkit-font-smoothing: antialiased
 
 @mixin height1($size)
 	height: $size

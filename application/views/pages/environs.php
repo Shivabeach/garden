@@ -17,9 +17,9 @@
 			<label for="category">Category</label>
 			<input type="text" list="cat" name="category" id="category" autocomplete="on"><br>
 			<datalist id="cat">
-				<option value="Soil Temperature"></option>
+				<option value="Soil Temperature ℉"></option>
 				<option value="Temperature"></option>
-				<option value="AirTemp"></option>
+				<option value="AirTemp ℉"></option>
 				<option value="Rain"></option>
 				<option value="Watered"></option>
 				<option value="General"></option>

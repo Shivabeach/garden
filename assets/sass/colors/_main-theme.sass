@@ -1,12 +1,13 @@
 @use '../abstracts' as *
 /* main theme colors */
-
+@use 'sass:color'
 body
 	background-color: #000000
 
 #container
-	background-color: var(--color-primary)
-	color: map-get($greenscheme, "primetext")
+	background-color: var(--blue-step-8)
+	color: color.mix(blue, $cornsilk, $method: rgb)
+	// color: var(--orange-300)
 
 .header,
 .footer,
